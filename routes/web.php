@@ -21,3 +21,7 @@ Route::get('/talk', function () {
 });
 
 Route::post('/talksubmission', 'TalkSubmissionsController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
