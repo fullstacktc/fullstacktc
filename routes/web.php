@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::get('/talk', function () {
     return view('talk');
 });
+
+Route::post('/talksubmission', 'TalkSubmissionsController@store');
