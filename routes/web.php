@@ -21,6 +21,7 @@ Route::get('/talk', function () {
 });
 
 Route::post('/talksubmission', 'TalkSubmissionsController@store');
+Route::get('/talksubmission', 'TalkSubmissionsController@index')->middleware('auth');
 
 Auth::routes();
 

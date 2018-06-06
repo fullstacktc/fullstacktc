@@ -14,7 +14,8 @@ class TalkSubmissionsController extends Controller
      */
     public function index()
     {
-        //
+        $talks = TalkSubmissions::all();
+        return view('talksubmissions')->with('talks', $talks);
     }
 
     /**
