@@ -1,6 +1,6 @@
 # Fullstack Tri Cities Website
 
-- setup (Larael Valet)[https://laravel.com/docs/5.6/valet]
+- setup [Larael Valet](https://laravel.com/docs/5.6/valet)
 - clone repo
 - `install composer`
 - `composer install`
