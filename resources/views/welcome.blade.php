@@ -36,31 +36,22 @@
       </div>
     </header>
 
-    <section class="download bg-primary text-center" id="newsletter">
+    <section class="download bg-primary text-center" id="hosts">
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>Sign up for our newsletter.</p>
-            <div class="badges">
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="https://facebook.us17.list-manage.com/subscribe/post?u=c868fe2e374622585aa200f0a&amp;id=506c8311af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email Address </label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                            </div>
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c868fe2e374622585aa200f0a_506c8311af" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
-                        </div>
-                    </form>
-                </div>
-                <!--End mc_embed_signup-->
+            <h2 class="section-heading">Your hosts!</h2>
+            <div class="row">
+              <div class="col">
+                <img src="/img/akopov.png"><br>
+                <h5><b>Michael Akopov</b><br>Software Developer - Founder/Host</h5>
+                <span>Michael loves Software Development, bringing people together to grow and learn, long bike rides by the river, and chocolate chip cookies.</span>
+              </div>
+              <div class="col">
+                <img src="/img/haro.png"><br>
+                <h5><b>Kevin Haro</b><br>Software Developer/Co-Host</h5>
+                <span>Kevin is a lovable and huggable guy that takes pride in making everyone feel welcome. He also enjoys warm cookies and riding bikes.</span>
+              </div>
             </div>
           </div>
         </div>
@@ -71,7 +62,7 @@
       <div class="container">
         <div class="section-heading text-center">
           <h2>The best topics. The best people.</h2>
-          <p class="text-muted">We meet the first wednesday of every month at Fuse.</p>
+          <p class="text-muted">We meet the first wednesday of every month at <a href="https://fusespc.com" target="_blank">Fuse</a>.</p>
           <hr>
         </div>
         <div class="row">
@@ -134,7 +125,7 @@
       <div class="cta-content">
         <div class="container">
           <h2>Give a talk.<br>Boost your career.</h2>
-          <a href="/talk" class="btn btn-outline btn-xl js-scroll-trigger" target="_blank">Submit a talk</a>
+          <a href="/talk" class="btn btn-outline btn-xl js-scroll-trigger">Submit a talk</a>
         </div>
       </div>
       <div class="overlay"></div>
