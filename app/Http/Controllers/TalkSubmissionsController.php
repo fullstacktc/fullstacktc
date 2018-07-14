@@ -19,6 +19,18 @@ class TalkSubmissionsController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index_talks_given()
+    {
+        $talks = $flights = TalkSubmissions::where('given', 1)->get();
+        
+        return view('talkgiven')->with('talks', $talks);
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

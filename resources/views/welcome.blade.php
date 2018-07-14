@@ -138,7 +138,7 @@
           new friends!</h2>
         <ul class="list-inline list-social">
           <li class="list-inline-item social-twitter">
-            <a href="#">
+            <a href="https://twitter.com/fullstacktc" target="_blank">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
