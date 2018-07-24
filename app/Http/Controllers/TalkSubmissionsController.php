@@ -59,7 +59,8 @@ class TalkSubmissionsController extends Controller
             'name' => request('name'),
             'email' => request('email'),
             'title' => request('title'),
-            'abstract' => request('abstract')
+            'abstract' => request('abstract'),
+            'video_url' => ''
         ]);
 
         if(!$result) {
