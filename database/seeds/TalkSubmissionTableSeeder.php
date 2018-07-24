@@ -18,7 +18,8 @@ class TalkSubmissionTableSeeder extends Seeder
                     'title' => 'Talk - ' .  $i,
                     'email' => str_random(6) . '@gmail.com',
                     'name' => str_random(10),
-                    'abstract' => str_random(255)
+                    'abstract' => str_random(255),
+                    'video_url' => 'https://youtube.com/'
                 ]);
             } else {
                 DB::table('talk_submissions')->insert([
@@ -27,7 +28,9 @@ class TalkSubmissionTableSeeder extends Seeder
                     'name' => str_random(10),
                     'abstract' => str_random(255),
                     'given' => 1,
-                    'date_given' => date('Y-m-d')
+                    'date_given' => date('Y-m-d'),
+                    'user_id' => 1,
+                    'video_url' => 'https://youtube.com/'
                 ]);
             }
         }
