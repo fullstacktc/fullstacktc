@@ -25,7 +25,7 @@ class TalkSubmissionsController extends Controller
      */
     public function index_talks_given()
     {
-        $talks = $flights = TalkSubmissions::where('given', 1)->get();
+        $talks = TalkSubmissions::where('given', 1)->with('user')->get();
         
         return view('talkgiven')->with('talks', $talks);
     }
