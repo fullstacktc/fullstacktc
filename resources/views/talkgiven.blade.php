@@ -13,6 +13,8 @@
         @endif
         @if ($talk->user !== null)
             <div><b>Presenter:</b> {{ $talk->user->name }}</div>
+        @else
+            <div><b>Presenter:</b> {{ $talk->name }}</div>
         @endif
         <div><b>Date Given:</b> {{ $talk->date_given }}</div>
         <div><b>Abstract:</b> {{ $talk->abstract }}</div>
