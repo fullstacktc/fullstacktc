@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\TalkSubmissions;
+use App\TalkSubmission;
 use Illuminate\Http\Request;
 
 class TalkSubmissionsController extends Controller
@@ -14,8 +14,8 @@ class TalkSubmissionsController extends Controller
      */
     public function index()
     {
-        $talks = TalkSubmissions::all();
-        return view('talksubmissions')->with('talks', $talks);
+        $talks = TalkSubmission::where('given', 1)->orderBy('date_given', 'desc')->with('user')->get();
+        return view('talk.given')->with('talks', $talks);
     }
 
     /**
@@ -23,11 +23,11 @@ class TalkSubmissionsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index_talks_given()
+    public function index_one(Request $request, $id)
     {
-        $talks = TalkSubmissions::where('given', 1)->orderBy('date_given', 'desc')->with('user')->get();
+        $talks = TalkSubmission::find($id);
         
-        return view('talkgiven')->with('talks', $talks);
+        return view('talk.given')->with('talks', [$talks]);
     }
 
     /**
@@ -55,12 +55,13 @@ class TalkSubmissionsController extends Controller
             'abstract' => 'required|string'
         ]);
 
-        $result = TalkSubmissions::create([
+        $result = TalkSubmission::create([
             'name' => request('name'),
             'email' => request('email'),
             'title' => request('title'),
             'abstract' => request('abstract'),
-            'video_url' => ''
+            'video_url' => '',
+            'notes' => ''
         ]);
 
         if(!$result) {
@@ -68,7 +69,7 @@ class TalkSubmissionsController extends Controller
             abort(500, 'Something went wrong');
         }
 
-        return view('talk_thankyou');
+        return view('talk.thankyou');
     }
 
     /**

@@ -18,7 +18,8 @@ class TalkSubmissionTableSeeder extends Seeder
             'abstract' => str_random(255),
             'given' => 1,
             'date_given' => date('Y-m-d'),
-            'video_url' => ''
+            'video_url' => '',
+            'notes' => '',
         ]);
 
         for($i = 1; $i <= 15; $i++) {
@@ -28,7 +29,8 @@ class TalkSubmissionTableSeeder extends Seeder
                     'email' => str_random(6) . '@gmail.com',
                     'name' => str_random(10),
                     'abstract' => str_random(255),
-                    'video_url' => 'https://youtube.com/'
+                    'video_url' => 'https://youtube.com/',
+                    'notes' => ''
                 ]);
             } else {
                 DB::table('talk_submissions')->insert([
@@ -39,7 +41,8 @@ class TalkSubmissionTableSeeder extends Seeder
                     'given' => 1,
                     'date_given' => date('Y-m-d'),
                     'user_id' => 1,
-                    'video_url' => 'https://youtube.com/'
+                    'video_url' => 'https://youtube.com/',
+                    'notes' => 'https://github.com/fullstacktc/meetupnotes/tree/master/082018'
                 ]);
             }
         }

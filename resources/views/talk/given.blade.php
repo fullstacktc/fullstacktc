@@ -11,8 +11,11 @@
         @if ($talk->video_url !== '')
             <div><a target="_blank" href="{{ $talk->video_url }}">Watch the video recording</a></div>
         @endif
+        @if ($talk->notes !== '')
+            <div><a target="_blank" href="{{ $talk->notes }}">Read the meetup notes</a></div>
+        @endif
         @if ($talk->user !== null)
-            <div><b>Presenter:</b> {{ $talk->user->name }}</div>
+            <div><b>Presenter:</b> <a href="/user/{{ $talk->user->username }}">{{ $talk->user->name }}</a></div>
         @else
             <div><b>Presenter:</b> {{ $talk->name }}</div>
         @endif
