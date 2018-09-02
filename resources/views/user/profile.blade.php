@@ -17,13 +17,13 @@
                 <h4>Talks</h4>
                 <div class="list-group">
                     @foreach($user->talk_submissions as $talk)
-                    <a href="/talks/{{ $talk->id }}" class="list-group-item list-group-item-action">{{ $talk->title }}</a>
+                    <a href="/talk/{{ $talk->id }}" class="list-group-item list-group-item-action">{{ $talk->title }}</a>
                     @endforeach
                 </div>
             </div>
         </div>
         <div class="col-sm-4 mx-auto text-center">
-            <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" width="200" height="200" />
+            <img src="{{ $user->avatar }}" width="200" height="200" />
             <hr />
             @if ($user->email !== null)
                 <div>{{ $user->email }}</div>

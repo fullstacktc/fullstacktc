@@ -17,7 +17,7 @@
     <div class="col card" style="width: 18rem;">
         <a href="/user/{{ $user->username }}">
         <div class="mx-auto text-center">
-            <img class="card-img-top" alt="{{ $user->name }}" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" />
+            <img class="card-img-top" alt="{{ $user->name }}" src="{{ $user->avatar }}" />
             <div class="card-body">
                 <p class="card-text"><div>{{ $user->name }}</div></p>
             </div>

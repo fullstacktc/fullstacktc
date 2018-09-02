@@ -20,6 +20,7 @@ class LinkToMeetupNotes extends Migration
         Schema::table('users', function($table) {
             $table->string('username', 100)->after('name')->default(null);
             $table->text('bio')->after('username')->default(null);
+            $table->string('avatar')->after('username')->default('/img/user/default-avatar.png');
             $table->index('username');
         });
     }

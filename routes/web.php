@@ -22,8 +22,9 @@ Route::get('/talk/submit', function () {
     return view('talk.new');
 });
 Route::post('/talk/submit', 'TalkSubmissionsController@store');
-Route::get('/talk/list', 'TalkSubmissionsController@index');
 Route::get('/talk/{id}', 'TalkSubmissionsController@index_one');
+Route::get('/talk/list', 'TalkSubmissionsController@index');
+
 
 /**
  * /user
