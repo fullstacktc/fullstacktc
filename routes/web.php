@@ -23,7 +23,7 @@ Route::get('/talk/submit', function () {
 });
 Route::post('/talk/submit', 'TalkSubmissionsController@store');
 Route::get('/talk/{id}', 'TalkSubmissionsController@index_one');
-Route::get('/talk/list', 'TalkSubmissionsController@index');
+Route::get('/talklist', 'TalkSubmissionsController@index'); // This should be /talk/list for some reason it doesnt work with the line above
 
 
 /**

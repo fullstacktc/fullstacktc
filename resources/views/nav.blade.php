@@ -21,7 +21,7 @@
           <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="/talk/list">Past Talks</a>
+          <a class="nav-link js-scroll-trigger" href="/talklist">Past Talks</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="/user/list">Speakrs</a>
