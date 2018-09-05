@@ -15,14 +15,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/talk', function () {
-    return view('talk');
+/**
+ * /talk
+ */
+Route::get('/talk/submit', function () {
+    return view('talk.new');
 });
+Route::post('/talk/submit', 'TalkSubmissionsController@store');
+Route::get('/talk/{id}', 'TalkSubmissionsController@index_one');
+Route::get('/talk/list', 'TalkSubmissionsController@index');
 
-Route::post('/talksubmission', 'TalkSubmissionsController@store');
-Route::get('/talksubmission', 'TalkSubmissionsController@index')->middleware('auth');
-Route::get('/talks', 'TalkSubmissionsController@index_talks_given');
+
+/**
+ * /user
+ */
+Route::get('/user/list', 'UserController@all_presenters');
+Route::get('/user/{username}', 'UserController@index');
+
 
 Auth::routes();
 

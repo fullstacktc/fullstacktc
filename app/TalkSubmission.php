@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TalkSubmissions extends Model
+class TalkSubmission extends Model
 {
     protected $fillable = ['name', 'email', 'title', 'abstract', 'given', 'presenter', 'date_given', 'video_url'];
 

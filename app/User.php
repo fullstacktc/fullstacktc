@@ -28,6 +28,6 @@ class User extends Authenticatable
     ];
 
     public function talk_submissions() {
-        return $this->hasMany('App\TalkSubmissions');
+        return $this->hasMany(TalkSubmission::class);
     }
 }

@@ -9,10 +9,13 @@
     <div class="container rounded p-3 shadow" style="background-color:#ECF0F1;color:black; word-wrap: break-word">
         <h3>{{ $talk->title }}</h3>
         @if ($talk->video_url !== '')
-            <div><a href="{{ $talk->video_url }}">Watch the video recording</a></div>
+            <div><a target="_blank" href="{{ $talk->video_url }}">Watch the video recording</a></div>
+        @endif
+        @if ($talk->notes !== '')
+            <div><a target="_blank" href="{{ $talk->notes }}">Read the meetup notes</a></div>
         @endif
         @if ($talk->user !== null)
-            <div><b>Presenter:</b> {{ $talk->user->name }}</div>
+            <div><b>Presenter:</b> <a href="/user/{{ $talk->user->username }}">{{ $talk->user->name }}</a></div>
         @else
             <div><b>Presenter:</b> {{ $talk->name }}</div>
         @endif
@@ -21,4 +24,4 @@
     </div>
     <br>
 @endforeach
-@endsection
+@endsection 

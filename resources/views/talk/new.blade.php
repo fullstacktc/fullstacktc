@@ -4,7 +4,7 @@
 <div class="pb-2 mt-4 mb-2 border-bottom">
     <h1 class="mb-1">Submit to give a talk.</h1>
 </div>
-<form method="post" action="{{ url('/talksubmission') }}">
+<form method="post" action="{{ url('/talk/submit') }}">
     {{ csrf_field() }}
     <div class="form-group">
         <label for="name">Name</label>

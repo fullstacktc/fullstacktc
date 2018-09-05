@@ -125,7 +125,7 @@
       <div class="cta-content">
         <div class="container">
           <h2>Give a talk.<br>Boost your career.</h2>
-          <a href="/talk" class="btn btn-outline btn-xl js-scroll-trigger">Submit a talk</a>
+          <a href="/talk/submit" class="btn btn-outline btn-xl js-scroll-trigger">Submit a talk</a>
         </div>
       </div>
       <div class="overlay"></div>
