@@ -3,6 +3,7 @@
 
   <head>
   @include('meta')
+  @include('analytics')
   </head>
 
   <body id="page-top">
