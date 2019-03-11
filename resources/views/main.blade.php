@@ -10,15 +10,7 @@
 
     @include('nav')
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="h-100" style="padding-top:70px;">
-          <main class="py-4">
-              @yield('content')
-          </main>
-        </div>
-      </div>
-    </header>
+    @yield('content')
 
     <footer>
       <div class="container">
