@@ -13,7 +13,7 @@
                         <div class="col-sm-8">
                             @if ($user->bio !== null)
                                 <h4>Bio</h4>
-                                <div>{{!! $user->bio !!}}</div>
+                                <div>{!! $user->bio !!}</div>
                             @endif
                             <hr />
                             <div class="talks">
